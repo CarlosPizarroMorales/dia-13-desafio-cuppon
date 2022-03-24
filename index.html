@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Carlos Pizarro Morales">
+    <meta name="curso" content="Frontend Trainee Vuejs 0013">
+    <meta name="description" content="Desafío 2 de la unidad 2 del módulo 2 Bootcamp 2022 - Bootstrap">
+    
+    <!-- No se olviden del pobre Explorer. Na mejor digamos que solo es aceptado Edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Iconos de nuestro website -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    <!-- Fuente Roboto 300 y 500 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Iconos de Fontawesome -->
+    <script src="https://kit.fontawesome.com/9a04d068ea.js" crossorigin="anonymous"></script>
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Estilos de Bootstrap cargados desde el CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <title>Desafío Cuppon</title>
+</head>
+<body>
+
+    <header>
+        <nav id="nav-pink" class="navbar navbar-expand-lg navbar-dark bg-success d-flex flex-row mb-4">
+            <div class="container-fluid px-3 py-2 h-100">
+              <a class="navbar-brand w-50" href="#">
+                <img class="w-75" src="./assets/img/logo-white.png" alt="logo de la suricata">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse pe-5" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-0">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">Productos</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="container">
+      
+        <div class="container px-3">
+            <!-- Primera fila del menú -->
+            <div class="row justify-content-around px-0">
+                <!-- Card 1 -->
+                <div class="card col-xs-1 col-md-4 px-0 mb-4">
+                    <img src="./assets/img/cupon-1.jpg" class="card-img-top" alt="una rica colación">
+                    <div class="card-body">
+                        <h5 class="card-title">Plumón Coral Fleece estampado en modelo y tamaño a elección</h5>
+                        <p class="card-text mb-0">Plumones Manolino</p>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> 9191 Avenida Vitacura, Chile</p>
+                        <hr>
+                        <div class="precios text-end">
+                            <span class="text-end me-2">$45.990</span>
+                            <span class="text-end text-success">$22.990</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card col-xs-1 col-md-4 px-0 mb-4">
+                  <img src="./assets/img/cupon-2.jpg" class="card-img-top" alt="una rica colación">
+                  <div class="card-body">
+                      <h5 class="card-title">Entrada para compartir + platos de fondo + postres + bebestibles</h5>
+                      <p class="card-text mb-0">V for Vegan</p>
+                      <p class="card-text"><i class="fa-solid fa-location-dot"></i> 777 Jesse Pinkman, Chile</p>
+                      <hr>
+                      <div class="precios text-end">
+                          <span class="text-end me-2">$30.990</span>
+                          <span class="text-end text-success">$12.990</span>
+                      </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card col-xs-1 col-md-4 px-0 mb-4">
+                  <img src="./assets/img/cupon-3.jpg" class="card-img-top" alt="una rica colación">
+                  <div class="card-body">
+                      <h5 class="card-title">Evaluación integral + blanqueamiento dental led + limpieza + fluoración</h5>
+                      <p class="card-text mb-0">Clínica Dental Quijada</p>
+                      <p class="card-text"><i class="fa-solid fa-location-dot"></i> 1342, Blanco Encalada, Chile</p>
+                      <hr>
+                      <div class="precios text-end">
+                          <span class="text-end me-2">$300.000</span>
+                          <span class="text-end text-success">$25.990</span>
+                      </div>
+                  </div>
+                </div>
+            </div>  
+            <!-- Fila 2 -->
+            <div class="row justify-content-around">
+                <!-- Card 1 -->
+                <div class="card col-xs-1 col-md-4 px-0 mb-4">
+                  <img src="./assets/img/cupon-4.jpg" class="card-img-top" alt="una rica colación">
+                  <div class="card-body">
+                      <h5 class="card-title">Colación para 2 personas + postre (no incluye bebidas)</h5>
+                      <p class="card-text mb-0">Suricata almacen</p>
+                      <p class="card-text"><i class="fa-solid fa-location-dot"></i> 1071 Miguel Claro, Chile</p>
+                      <hr>
+                      <div class="precios text-end">
+                          <span class="text-end me-2">$4.200</span>
+                          <span class="text-end text-success">$2.100</span>
+                      </div>
+                  </div>
+                </div>  
+                <!-- Card 2 -->
+                <div class="card col-xs-1 col-md-4 px-0 mb-4">
+                  <img src="./assets/img/cupon-5.jpg" class="card-img-top" alt="una rica colación">
+                  <div class="card-body">
+                      <h5 class="card-title">1, 2 o 4 tickets para Stukids. Elige sucursal</h5>
+                      <p class="card-text mb-0">Stukids Centro de Eventos</p>
+                      <p class="card-text"><i class="fa-solid fa-location-dot"></i> 133 El tranque, Chile</p>
+                      <hr>
+                      <div class="precios text-end">
+                          <span class="text-end me-2">$4.000</span>
+                          <span class="text-end text-success">$2.500</span>
+                      </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card col-xs-1 col-md-4 px-0 mb-4">
+                  <img src="./assets/img/cupon-6.jpg" class="card-img-top" alt="una rica colación">
+                  <div class="card-body pe-0">
+                      <h5 class="card-title">San Pedro de Atacama<br>: 1 o 2 noches en alojamiento a elección</h5>
+                      <p class="card-text mb-0">D-Latam Travel</p>
+                      <p class="card-text"></p>
+                      <hr>
+                      <div class="precios text-end pe-3">
+                          <span class="text-end me-2">$80.200</span>
+                          <span class="text-end text-success">$44.100</span>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-3">
+        <div class="container-fluid text-white bg-success text-center">
+            <form class="px-1 py-4">
+                <fieldset>
+                    <legend>Recibe cupones en tu correo</legend>
+                    <div class="mb-3">
+                      <label for="name" class="form-label"></label>
+                      <input type="text" id="name" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label"></label>
+                      <input type="text" id="email" class="form-control" placeholder="Correo electrónico">
+                    </div>
+                    <button type="submit" class="btn btn-light">Enviar</button>
+                </fieldset>
+            </form>  
+        </div>
+        <div class="container-fluid text-center py-3">
+          <img class="w-25" src="./assets/img/logo-black.png" alt="Logo de la compañía Cuppon. No invirtieron mucho en él.">
+          <p class="my-1 px-0">&#169; 2018 Cuppon Latam. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para el bundle de BS por CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

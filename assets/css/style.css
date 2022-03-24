@@ -1,0 +1,34 @@
+/* Se utiliza !important para invalidar
+/* el peso de las clases que definen el 
+/* estilo de fuente en el Reboot de BS 
+/* sin tener que tocar sus variables 
+/* con Sass ni tener que acudir a id's }
+/* o classe's que no tienen semántica alguna.
+/* ...además después de ver el código
+/* fuente de Bootstrap.css no se si en 
+/* Twitter leyeron sobre la mala práctica
+/* que significa llenar de !important's */
+body, h5 {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300 !important;
+    color: #707070 !important;
+}
+
+.container .card .card-title {
+    font-size: 1.25rem;
+    color: #212529 !important;
+}
+
+.container .card .card-body p:nth-child(3) {
+    font-size: 0.8125rem;
+}
+
+.precios span:nth-child(2) {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+legend {
+    font-weight: 500;
+}
+
